@@ -3,6 +3,8 @@ to be appeared on *21st ACM Conference on Computer and Communications Security 2
 
 _**We later designed a new ORAM called [Circuit ORAM](http://eprint.iacr.org/2014/672) with the smallest circuit size both asymptotically and in practice**._
 
+** This repo is forked from  [FlexSC](https://github.com/wangxiao1254/FlexSC).**
+
 ## Authors
 
 [Xiao Shaun Wang](http://www.cs.umd.edu/~wangxiao/) (University of Maryland, College Park)
