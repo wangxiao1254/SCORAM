@@ -1,23 +1,37 @@
-FlexSC
-======
+# SCORAM: Oblivious RAM for Secure Computation
+to be appeared on *21st ACM Conference on Computer and Communications Security 2014*. [Link to paper](http://eprint.iacr.org/2014/671)
 
-A Flexible Efficient Secure Computation Backend.
+_**We later designed a new ORAM called [Circuit ORAM](http://eprint.iacr.org/2014/672) with the smallest circuit size both asymptotically and in practice**._
 
-version 0.1
+## Authors
 
-1. Runnable backend.
-2. Three modes(REAL, VERIFY, COUNT) that can run the real protocol, verify the correctness of circuit and count the statitics 
-of the circuit respectively.
-3. Basic integer arithmetic circuit library with test case.
+[Xiao Shaun Wang](http://www.cs.umd.edu/~wangxiao/) (University of Maryland, College Park)
 
-version 0.2(comming soon)
+[Yan Huang](http://yhuangpress.wordpress.com/) (Indiana University, Bloomington)
 
-1. Fixed point and Floating point arithmetic circuit library with test case.
-2. Sorting circuit library with test case. 
- 
-# Author
-1. Yan Hunag <yh33@indiana.edu>
-2. Xiao Shaun Wang <wangxiao@cs.umd.edu>
-3. Kartik Nayak <kartik@cs.umd.edu>
+[T-H. Hubert Chan](http://i.cs.hku.hk/~hubert/) (University of Hong Kong)
 
-This document is in developemnt.
+[abhi shelat](http://www.cs.virginia.edu/~shelat/Virginia.html) (University of Virginia)
+
+[Elaine Shi](http://www.cs.umd.edu/~elaine/) (University of Maryland, College Park)
+
+
+
+## Step by step instructions to run the code:
+
+1. open a terminal. (followings are commands in terminal)
+2. `git clone git@github.com:wangxiao1254/SCORAM.git`
+3. `cd SCORAM`
+4. `./compile.sh`
+5. `java  -cp bin:lib/* test.VerifySCORAM 12345 7 6 32 8 5 200 200` 
+ to test the correctness of SCORAM construction,
+detailed explanation of parameters can be found by `java  -cp bin:lib/* test.VerifySCORAM`
+6. open another terminal and run `java -cp bin:lib/* test.TestSCORAMClient localhost 12345` on one terminal and
+`java  -cp bin:lib/* test.TestSCORAMServer 12345 20 6 32  8 10` on the other terminal. detail explanation
+of parameters can be found by `java  -cp bin:lib/* test.TestSCORAMServer`
+
+## Point of contact:
+
+1. Xiao Shaun Wang (wangxiao@cs.umd.edu)
+2. Yan Huang (yhuang@cs.umd.edu)
+
