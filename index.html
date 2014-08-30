@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Scoram by wangxiao1254</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/wangxiao1254/SCORAM">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Scoram</h1>
+            <h2>First open source implementation of ORAM in secure computation.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/wangxiao1254/SCORAM/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/wangxiao1254/SCORAM/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="scoram-oblivious-ram-for-secure-computation" class="anchor" href="#scoram-oblivious-ram-for-secure-computation"><span class="octicon octicon-link"></span></a>SCORAM: Oblivious RAM for Secure Computation</h1>
+
+<p>to be appeared on <em>21st ACM Conference on Computer and Communications Security 2014</em>. <a href="http://eprint.iacr.org/2014/671">Link to paper</a></p>
+
+<p><em><strong>We later designed a new ORAM called <a href="http://eprint.iacr.org/2014/672">Circuit ORAM</a> with the smallest circuit size both asymptotically and in practice</strong>.</em></p>
+
+<h2>
+<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
+
+<p><a href="http://www.cs.umd.edu/%7Ewangxiao/">Xiao Shaun Wang</a> (University of Maryland, College Park)</p>
+
+<p><a href="http://yhuangpress.wordpress.com/">Yan Huang</a> (Indiana University, Bloomington)</p>
+
+<p><a href="http://i.cs.hku.hk/%7Ehubert/">T-H. Hubert Chan</a> (University of Hong Kong)</p>
+
+<p><a href="http://www.cs.virginia.edu/%7Eshelat/Virginia.html">abhi shelat</a> (University of Virginia)</p>
+
+<p><a href="http://www.cs.umd.edu/%7Eelaine/">Elaine Shi</a> (University of Maryland, College Park)</p>
+
+<h2>
+<a name="step-by-step-instructions-to-run-the-code" class="anchor" href="#step-by-step-instructions-to-run-the-code"><span class="octicon octicon-link"></span></a>Step by step instructions to run the code:</h2>
+
+<ol>
+<li>open a terminal. (followings are commands in terminal)</li>
+<li><code>git clone git@github.com:wangxiao1254/SCORAM.git</code></li>
+<li><code>cd SCORAM</code></li>
+<li><code>./compile.sh</code></li>
+<li>
+<code>java  -cp bin:lib/* test.VerifySCORAM 12345 7 6 32 8 5 200 200</code>
+to test the correctness of SCORAM construction,
+detailed explanation of parameters can be found by <code>java  -cp bin:lib/* test.VerifySCORAM</code>
+</li>
+<li>open another terminal and run <code>java -cp bin:lib/* test.TestSCORAMClient localhost 12345</code> on one terminal and
+<code>java  -cp bin:lib/* test.TestSCORAMServer 12345 20 6 32  8 10</code> on the other terminal. detail explanation
+of parameters can be found by <code>java  -cp bin:lib/* test.TestSCORAMServer</code>
+</li>
+</ol><h2>
+<a name="point-of-contact" class="anchor" href="#point-of-contact"><span class="octicon octicon-link"></span></a>Point of contact:</h2>
+
+<ol>
+<li>Xiao Shaun Wang (<a href="mailto:wangxiao@cs.umd.edu">wangxiao@cs.umd.edu</a>)</li>
+<li>Yan Huang (<a href="mailto:yhuang@cs.umd.edu">yhuang@cs.umd.edu</a>)</li>
+</ol>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/wangxiao1254">wangxiao1254</a> can be found on <a href="https://github.com/wangxiao1254/SCORAM">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-54112902-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
